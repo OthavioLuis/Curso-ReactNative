@@ -30,7 +30,7 @@ class App extends Component{
           underlineColorAndroid="Transparent"
           onChangeText={this.pegaNome}
         />
-        <Text style={styles.texto}>{this.state.none}</Text>
+        <Text style={styles.texto}>{this.state.nome}</Text>
       </View>
     )
   }

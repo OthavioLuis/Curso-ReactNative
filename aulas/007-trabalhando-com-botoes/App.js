@@ -15,7 +15,7 @@ class App extends Component {
 
   entrar() {
     if (this.state.input === '') {
-      alert('Digite seu nome!');
+      alert('Digite seu nome!');  
       return;
     }
     this.setState({ nome: 'Bem vindo ' + this.state.input });
@@ -34,7 +34,7 @@ class App extends Component {
 
         <Button title='Entrar' onPress={this.entrar} />
 
-        <Text style={styles.texto}>{this.state.none}</Text>
+        <Text style={styles.texto}>{this.state.nome}</Text>
 
       </View>
     )
